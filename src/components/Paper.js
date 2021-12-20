@@ -26,9 +26,9 @@ const Paper = () => {
 
         if (playAction === compActions) {
             setRes('Ничья')
-        } else if (playAction === "Камень" && compActions === "Ножницы"
-            || playAction === "Бумага" && compActions === "Ножницы"
-            || playAction === "Камень" && compActions === "Бумага"
+        } else if ((playAction === "Камень" && compActions === "Ножницы")
+            || (playAction === "Бумага" && compActions === "Ножницы")
+            ||( playAction === "Камень" && compActions === "Бумага")
         ) {
             setRes("Вы выиграли!")
             setPlayerScore(playerScore + 1)
